@@ -40,10 +40,10 @@
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <a class="navbar-brand" href="index.html">
-          <span>
-            LENSCON
-          </span>
-        </a>
+         
+          <img src="/images/LENSCON_LOGO-1_page-0001.png" width="250px">
+        
+      </a>
         <div class="" id="">
 
           <div class="custom_menu-btn">
@@ -58,7 +58,7 @@
                 <a href="about.html">About</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="service.html">Service</a>
-                <a href="blog.html">Blog</a>
+                <a href="projects.html">Projects</a>
               </div>
             </div>
           </div>
@@ -81,7 +81,9 @@
         <div class=" col-sm-8 col-md-5 px-0">
           <div class="img-box">
             <img src="images\p3.jpg" height="400px" alt="">
-            <a href="images\p3.jpg"  data-toggle="lightbox" data-gallery="gallery">
+            <a href="images\p3.jpg"  data-toggle="lightbox" data-gallery="gallery" 
+            data-footer="This is a description of Project 3."
+            >
               <i class="fa fa-picture-o" aria-hidden="true"></i>
             </a>
           </div>
@@ -97,14 +99,15 @@
         <div class="col-sm-6 col-md-3 px-0">
           <div class="img-box">
             <img src="images\susan phili aparatment thripunithura.jpg" height="400px" alt="">
-            <a href="images\susan phili aparatment thripunithura.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <a href="images\susan phili aparatment thripunithura.jpg" title="Client : Susan Philip"
+            data-footer="Thripunithura" data-toggle="lightbox" data-gallery="gallery">
               <i class="fa fa-picture-o" aria-hidden="true"></i>
             </a>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 px-1">
           <div class="img-box">
-            <img src="images\kattlas project.jpg" height="200px" alt="">
+            <img src="images\kattlas project.jpg" height="300px" alt="">
             <a href="images\kattlas project.jpg" data-toggle="lightbox" data-gallery="gallery">
               <i class="fa fa-picture-o" aria-hidden="true"></i>
             </a>
@@ -112,7 +115,7 @@
         </div>
         <div class="col-sm-5 col-md-3 px-0">
           <div class="img-box">
-            <img src="images\karalam anganvady.jpg" height="200px" alt="">
+            <img src="images\karalam anganvady.jpg" height="300px" alt="">
             <a href="images\karalam anganvady.jpg" data-toggle="lightbox" data-gallery="gallery">
               <i class="fa fa-picture-o" aria-hidden="true"></i>
             </a>
@@ -120,7 +123,7 @@
         </div>
         <div class="col-sm-4 col-md-3 px-0">
           <div class="img-box">
-            <img src="images\polasery foundation1.jpg" height="200px" alt="">
+            <img src="images\polasery foundation1.jpg" height="300px" alt="">
             <a href="images\polasery foundation1.jpg" data-toggle="lightbox" data-gallery="gallery">
               <i class="fa fa-picture-o" aria-hidden="true"></i>
             </a>
@@ -128,18 +131,18 @@
         </div>
         <div class="col-sm-4 col-md-3 px-0">
           <div class="img-box">
-            <img src="images\kattor bank site.jpg" height="200px" alt="">
-            <a href="images\kattor bank site.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="images\kattor bank site.jpg" height="300px" alt="">
+            <a href="images\kattor bank site.jpg" data-toggle="lightbox" data-footer="Katt" data-gallery="gallery">
               <i class="fa fa-picture-o" aria-hidden="true"></i>
             </a>
           </div>
         </div>
       </div>
-      <div class="btn-box">
+      <!-- <div class="btn-box">
         <a href="">
           View All
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -227,12 +230,15 @@
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
-  <!-- lightbox Gallery-->
-  <script src="js/ekko-lightbox.min.js"></script>
-  <!-- custom js -->
-  <script src="js/custom.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/ekko-lightbox.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+  $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+  });
+</script>
 
 </body>
 

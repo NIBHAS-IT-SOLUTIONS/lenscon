@@ -646,12 +646,14 @@ a:focus {
   color: #444;
 }
 
-.blog_section .box .detail-box a {
+.blog_section a {
   display: inline-block;
+  margin-top: 2%;
+  
   padding: 7px 20px;
   background-color: #3a3f58;
   color: #ffffff;
-  border-radius: 0;
+  border-radius: 5px;
   border: 1px solid #3a3f58;
   -webkit-transition: all .2s;
   transition: all .2s;
