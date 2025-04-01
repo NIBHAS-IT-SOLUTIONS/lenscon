@@ -438,6 +438,7 @@ a:focus {
   display: flex;
   overflow: hidden;
   position: relative;
+  
 }
 
 .gallery_section .img-box img {
