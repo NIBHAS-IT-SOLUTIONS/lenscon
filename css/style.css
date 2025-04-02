@@ -352,6 +352,7 @@ a:focus {
 .slider_section .img-box img {
   min-width: 100%;
   min-height: 100%;
+  object-fit: fill;
 }
 
 .slider_section .img-box::before {
@@ -430,6 +431,7 @@ a:focus {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+          
 }
 
 .gallery_section .img-box {

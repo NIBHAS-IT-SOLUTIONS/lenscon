@@ -56,9 +56,9 @@
               <div class="overlay-content">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
-                <a href="gallery.html">Gallery</a>
                 <a href="service.html">Service</a>
                 <a href="projects.html">Projects</a>
+                <a href="gallery.html">Gallery</a>
                 <a href="contact.html">Contact Us</a>
               </div>
             </div>
@@ -74,30 +74,31 @@
     <div id="customCarousel1" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="img_container">
-            <div class="img-box">
-              <img src="images/p3.jpg" class="firstimage" alt="...">
+          <div class="img_container" style=" width: 100%;
+    max-width: 100%;">
+            <div class="img-box" style="" >
+              <img src="images/p3.jpg" class="firstimage img-fluid" alt="...">
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="img_container">
             <div class="img-box">
-              <img src="images/kattlas project.jpg" class="firstimage" alt="...">
+              <img src="images/kattlas project.jpg" class="firstimage img-fluid" alt="...">
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="img_container">
             <div class="img-box">
-              <img src="images/p4.jpg" class="firstimage" alt="...">
+              <img src="images/p4.jpg" class="firstimage img-fluid" alt="...">
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="img_container">
             <div class="img-box">
-              <img src="images/lenscon-pvt-ltd-engineers-and-contractors-irinjalakuda-thrissur-construction-companies-dax44xragf.jpg" class="firstimage" alt="...">
+              <img src="images/lenscon-pvt-ltd-engineers-and-contractors-irinjalakuda-thrissur-construction-companies-dax44xragf.jpg" class="firstimage img-fluid" alt="...">
             </div>
           </div>
         </div>
@@ -119,9 +120,9 @@
     <div class="detail-box">
       <div class="col-md-8 col-lg-6 mx-auto">
         <div class="inner_detail-box">
-          <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+          <h1 style="font-family: Georgia, 'Times New Roman', Times, serif">
             Lenscon Engineers<br>
-             & <br>Contractors <br>Pvt Ltd
+             & Contractors <br>Pvt Ltd
           </h1>
           <p style="text-align: justify;">
             Established in 2019 in Irinjalakuda, we are a group of civil engineering professionals who undertake and execute all types of civil engineering works. Our team has 22 to 55 years of experience in the construction field, both in India and abroad.
@@ -260,7 +261,7 @@
             </div>
             <div class="detail-box">
               <h5>
-                Residential Decoration
+                Residential Projrcts
               </h5>
               <p style="text-align:center;">
                 we specialize in creating stunning,functional and personalize spaces that reflect your styleand meet your life style needs.
@@ -278,7 +279,7 @@
             </div>
             <div class="detail-box">
               <h5>
-                Commercial Decoration
+                Commercial Projects
               </h5>
               <p style="text-align:center;">
                 We specialize in designing modern, stylish,and highly functional interiors that create an engaging shopping experience.
@@ -296,7 +297,7 @@
             </div>
             <div class="detail-box">
               <h5>
-                Office Decoration
+                interiors Designs
               </h5>
               <p style="text-align:center;">
                 "Elevate your workspace with Lenscon Engineers & Contractors Pvt Ltd.where design meets productivity. Transform your office today!"
@@ -479,18 +480,21 @@ They delivered high-quality work on time and within budget. Highly recommended f
                 Contact Us
               </h2>
             </div>
-            <form id="contactForm" action="https://formsubmit.co/nibhasitsolutions@gmail.com" method="post">
+            <form id="contactForm" target="_blank" action="https://formsubmit.co/mail.lenscon@gmail.com" method="post">
               <div>
-                <input type="text" id="name" name="name" placeholder="Your Name" />
+                <input type="text" id="name" required name="name" placeholder="Your Name" />
               </div>
               <div>
-                <input type="text" id="contact" name="contact" placeholder="Phone Number" />
+                <input type="text" id="contact" required name="contact" placeholder="Phone Number" />
               </div>
               <div>
-                <input type="email" id="email" name="email" placeholder="Email" />
+                <input type="email" id="email" required name="email" placeholder="Email" />
               </div>
               <div>
-                <input type="text" id="message" name="message" class="message-box" placeholder="Message" />
+              
+                <input type="text" id="message" required name="message" class="message-box" placeholder="Message" />
+                
+               
               </div>
               <div class="btn_box">
                 <button type="submit">
@@ -571,13 +575,13 @@ They delivered high-quality work on time and within budget. Highly recommended f
             Follow Us
           </h4>
           <div class="social_box">
-            <a href="">
+            <a href="https://www.facebook.com/profile.php?id=61571835936825">
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/lensconengineeringcontractor/">
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
@@ -611,9 +615,12 @@ They delivered high-quality work on time and within budget. Highly recommended f
   <script>
     document.getElementById("contactForm").addEventListener("submit", function(event) {
         
-                event.preventDefault();
-                alert("Thanks For The Message")
-            window.location.href = "index.html"
+     
+ 
+
+      event.preventDefault();
+      alert("Thanks For The Message")
+       window.location.href = "index.html"
       })
       
 
